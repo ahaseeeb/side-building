@@ -1,39 +1,17 @@
-.studio {
-  font-family: var(--font-averta-demo-pe-cutted-demo);
-}
 :root {
   --font-averta-demo-pe-cutted-demo: "Averta Demo PE Cutted Demo";
   --font-proxima-nova: "Proxima Nova";
 
-  --font-size-sm: 14px;
-  --font-size-xl: 20px;
-  --font-size-5xl: 24px;
-  --font-size-21xl: 40px;
-  --font-size-lg: 18px;
-  --font-size-base: 16px;
-
   --color-gray-100: #757575;
-  --color-whitesmoke-100: #f2f2f2;
-  --color-whitesmoke-200: #f1f1f1;
   --color-dimgray: #565656;
   --color-black: #000;
   --color-mediumblue: #2639ed;
   --color-white: #fff;
-  --color-aliceblue-100: #f4f9ff;
-  --color-aliceblue-200: #e7f0fc;
-  --color-cornsilk: #fff5db;
-  --color-deeppink: #ff007a;
 
-  --padding-xl: 20px;
-  --padding-21xl: 40px;
-
-  --br-41xl: 60px;
-  --br-81xl: 100px;
-  --br-481xl: 500px;
-  --br-xl: 20px;
-  --br-21xl: 40px;
-
-  --shadow-1: 10px 20px 50px rgba(0, 0, 0, 0.15);
+  --padding-20: 20px;
+  --padding-40: 40px;
+  --px-60: 60px;
+  --px-100: 500px;
 }
 .container {
   max-width: 1366px;
@@ -42,7 +20,7 @@
 }
 
 .home-parent {
-  font-size: var(--font-size-base);
+  font-size: 16px;
   font-family: var(--font-averta-demo-pe-cutted-demo);
   margin: 0;
   list-style: none;
@@ -50,9 +28,10 @@
   gap: 60px;
 }
 
-.home-parent li a {
+.studio, .home-parent li a {
   color: black;
   text-decoration: none;
+  font-family: var(--font-averta-demo-pe-cutted-demo);
 }
 .services {
   display: flex;
@@ -71,16 +50,6 @@ ul.home-parent {
   margin-top: 25px;
 }
 
-.hero-headline-child {
-  border-radius: 0 0 var(--br-81xl) 0;
-  background-color: var(--color-cornsilk);
-}
-
-.hero-headline-item {
-  border-radius: 50%;
-  background-color: #dae9ff;
-}
-
 .image-8-icon {
   border-radius: 0 0 0 200px;
   width: 754px;
@@ -89,11 +58,11 @@ ul.home-parent {
 }
 
 .a-digital-product {
-  -webkit-text-stroke: 1px #000;
+  -webkit-text-stroke: 1px;
 }
 
 .leading-digital-agency {
-  font-size: var(--font-size-base);
+  font-size: 16px;
   line-height: 160%;
   color: var(--color-dimgray);
   display: inline-block;
@@ -105,23 +74,27 @@ ul.home-parent {
   letter-spacing: 0.07em;
   -webkit-text-stroke: 0.5px #fff;
 }
-
+.content {
+  display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
 .cta-contact-now {
-  border-radius: var(--br-41xl);
+  border-radius: var(--px-60);
   background-color: var(--color-mediumblue);
   display: flex;
   flex-direction: row;
-  padding: var(--padding-xl) var(--padding-21xl);
+  padding: var(--padding-20) var(--padding-40);
   align-items: center;
   justify-content: center;
-  font-size: var(--font-size-xl);
+  font-size: 20px;
   color: var(--color-white);
   max-width: 150px;
 }
 
 .hero-headline {
   display: flex;
-  font-size: var(--font-size-21xl);
+  font-size: 40px;
   justify-content: space-between;
   align-items: center;
   margin-top: 25px;
@@ -133,7 +106,7 @@ ul.home-parent {
 }
 
 .our-client1 {
-  font-size: var(--font-size-21xl);
+  font-size: 40px;
   color: var(--color-black);
   -webkit-text-stroke: 1px #000;
   margin-bottom: 12px;
@@ -147,7 +120,6 @@ ul.home-parent {
 
 .amazon-logo-icon,
 .google-logo-icon {
-
   overflow: hidden;
 }
 
@@ -156,7 +128,7 @@ ul.home-parent {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  font-size: var(--font-size-lg);
+  font-size: 18px;
   color: var(--color-gray-100);
 }
 
@@ -173,7 +145,7 @@ ul.home-parent {
 
 .how-can-we-help-your-business-wrapper {
 
-  font-size: var(--font-size-21xl);
+  font-size: 40px;
   color: var(--color-black);
 }
 
@@ -223,7 +195,7 @@ ul.home-parent {
 }
 
 .business-idea-planning {
-  font-size: var(--font-size-5xl);
+  font-size: 24px;
   color: var(--color-black);
   display: inline-block;
   -webkit-text-stroke: 0.3px #000;
@@ -231,7 +203,7 @@ ul.home-parent {
 
 .financial-planning-system {
 
-  font-size: var(--font-size-5xl);
+  font-size: 24px;
   color: var(--color-black);
   display: inline-block;
   -webkit-text-stroke: 0.3px #000;
@@ -239,7 +211,7 @@ ul.home-parent {
 
 .market-analysis-project {
 
-  font-size: var(--font-size-5xl);
+  font-size: 24px;
   color: var(--color-black);
   display: inline-block;
 
@@ -248,7 +220,7 @@ ul.home-parent {
 
 .development-website-and {
 
-  font-size: var(--font-size-5xl);
+  font-size: 24px;
   color: var(--color-black);
   display: inline-block;
   -webkit-text-stroke: 0.3px #000;
@@ -283,7 +255,7 @@ ul.home-parent {
   display: inline-block;
   width: 468px;
   -webkit-text-stroke: 1px #000;
-  font-size: var(--font-size-21xl);
+  font-size: 40px;
   color: var(--color-black);
 }
 
@@ -343,7 +315,7 @@ ul.home-parent {
 
 .unsplashmtztgvdshfy-icon {
 
-  border-radius: var(--br-481xl) 0 var(--br-481xl) var(--br-481xl);
+  border-radius: var(--px-100) 0 var(--px-100) var(--px-100);
   object-fit: cover;
 
   max-width: 500px
@@ -357,7 +329,7 @@ ul.home-parent {
 }
 
 .what-our-happy {
-  font-size: var(--font-size-21xl);
+  font-size: 40px;
   -webkit-text-stroke: 1px #000;
   margin-bottom: 0;
 }
@@ -371,7 +343,7 @@ ul.home-parent {
 }
 
 .perfect-very-good {
-  font-size: var(--font-size-base);
+  font-size: 16px;
   line-height: 160%;
   color: var(--color-dimgray);
   text-align: left;
@@ -379,12 +351,12 @@ ul.home-parent {
 }
 
 .matthew-paul-parent {
-  font-size: var(--font-size-5xl);
+  font-size: 24px;
 }
 
 .happy-client {
   text-align: center;
-  font-size: var(--font-size-lg);
+  font-size: 18px;
 }
 
 .group-child10,
@@ -397,11 +369,11 @@ ul.home-parent {
 }
 
 .contact-now-wrapper {
-  border-radius: var(--br-41xl);
+  border-radius: var(--px-60);
   background-color: var(--color-mediumblue);
   display: flex;
   flex-direction: row;
-  padding: var(--padding-xl) var(--padding-21xl);
+  padding: var(--padding-20) var(--padding-40);
   align-items: center;
   justify-content: center;
   color: var(--color-white);
@@ -422,7 +394,7 @@ ul.home-parent {
 }
 
 .i-will-update {
-  font-size: var(--font-size-lg);
+  font-size: 18px;
   line-height: 160%;
   color: var(--color-gray-100);
   display: inline-block;
@@ -430,7 +402,7 @@ ul.home-parent {
 }
 
 .subscribe-newsletter {
-  font-size: var(--font-size-21xl);
+  font-size: 40px;
   color: var(--color-black);
   -webkit-text-stroke: 1px #000;
 }
@@ -465,7 +437,7 @@ ul.home-parent {
 }
 
 .a-studio1 {
-  font-size: var(--font-size-5xl);
+  font-size: 24px;
   font-family: var(--font-proxima-nova);
 }
 
@@ -473,7 +445,7 @@ ul.home-parent {
 .contact1,
 .support,
 .what-we-do1 {
-  font-size: var(--font-size-xl);
+  font-size: 20px;
   -webkit-text-stroke: 0.4px #000;
 }
 
@@ -537,7 +509,7 @@ ul.home-parent {
 }
 
 .footer-inner {
-  border-top: 1px solid var(--color-whitesmoke-200);
+  border-top: 1px solid #f1f1f1;
   box-sizing: border-box;
 }
 
@@ -545,7 +517,7 @@ ul.home-parent {
   display: flex;
   padding: 30px;
   justify-content: space-around;
-  font-size: var(--font-size-sm);
+  font-size: 14px;
 }
 
 .social-media {
@@ -565,7 +537,7 @@ ul.home-parent {
 .landing-page-studio {
   background-color: #fefefe;
   text-align: left;
-  font-size: var(--font-size-base);
+  font-size: 16px;
   color: var(--color-black);
   font-family: var(--font-averta-demo-pe-cutted-demo);
 }
